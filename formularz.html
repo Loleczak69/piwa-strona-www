@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+    <header>
+        <h1>Strona o programowaniu</h1>
+    </header>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li> <a href="index.html"> Strona główna </a> </li>
+            <li><a href="https://alkoholeswiata24.pl/piwa" target="_blank">
+                alkoholeswiata24</a></li>
+            <li><a href="jasne.html">Piwa jasne</a></li>
+            <li><a href="ciemne.html">Piwa ciemne</a></li>
+            <li><a href="smak.html">Piwa smakowe</a></li>
+            <li><a href="free.html">Piwa bezalkoholowe</a></li>
+            <li><a href="mapa.html">Mapa najlepszych piw</a></li>
+            <li><a href="formularz.html">Formularz</a></li>
+            <li><a href="galeria.html">Galeria zdjęć</a></li>
+            <li><a href="tabela.html">Tabela</a></li>
+            <li><a href="">Kalkulator</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Formularz danych osobowych piwosza</h2>
+        <form action="" method="post">
+            <p>
+                Proszę wypełnić ten formularz. <br>
+                Pola oznaczone <em>*</em> są obowiązkowe!
+            </p>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <label for="imie">Imie<em>*</em> </label>
+                <input type="text" name="imie" id="imie" required autofocus ><br>
+                <label for="nazw">Nazwisko<em>*</em> </label>
+                <input type="text" name="nazw" id="nazw" required><br>
+                <label for="tele">Telefon<em>*</em> </label>
+                <input type="tel" name="tele" id="tele" required 
+                placeholder="(+48) xxx-xxx-xxx"><br>
+                <label for="mail">Mail<em>*</em> </label>
+                <input type="email" name="mail" id="mail" required 
+                placeholder="imie.nazwisko@example.com"><br>
+
+            </fieldset>
+            <fieldset><legend>Szczegółowe dane osobowe</legend>
+                <label for="waga">Waga</label>
+                <input type="number" name="waga" id="waga" 
+                min="0" max="120" step="0.5"><br>
+
+                <label for="Wzrost">Wzrost</label>
+                <input type="range" name="Wzrost" id="Wzrost" 
+                min="0" max="240" step="40" value="180"> (0-240)[cm] <br>
+
+                <label for="pleć">Płeć</label>
+                <select name="pleć" id="pleć">
+                    <option value="kobieta">Kobieta</option>
+                    <option value="mężczyzna">Mężczyzna</option>
+                    <option value="nie podaję" selected>nie podaję</option>
+                </select><br>
+                <label for="dataUr">Data urodzenia</label>
+                <input type="date" name="dataUr" id="dataUr"><br>
+            </fieldset>
+
+            <fieldset><legend>Preferencje smakowe</legend>
+                Piwo jasne <input type="checkbox" name="zainteresowania" id=""><br>
+               Piwo ciemne <input type="checkbox" name="zainteresowania" id=""><br>
+                <label for="html">Piwo smakowe</label>
+                <input type="checkbox" name="zainteresowania" id="html"><br>
+                <label for="css">Wysoki%</label>
+                <input type="checkbox" name="zainteresowania" id="css"><br>
+              
+          
+            </fieldset>
+            <fieldset><legend>Przedział wiekowy</legend>
+                <input type="radio" name="przed_wiek" id="" value="0-18"> 0-18 <br>
+                <input type="radio" name="przed_wiek" id="" checked> 19-30 <br>
+                <input type="radio" name="przed_wiek" id=""> 31-50 <br>
+                <input type="radio" name="przed_wiek" id=""> 51-70 <br>
+                <input type="radio" name="przed_wiek" id=""> więcej <br>
+            </fieldset>
+            <fieldset><legend>Przedział piw wypitych w tygodniu</legend>
+                <input type="radio" name="przed_wiek" id="" value="0-18"> 0-5 <br>
+                <input type="radio" name="przed_wiek" id="" checked> 6-10 <br>
+                <input type="radio" name="przed_wiek" id=""> 11-15 <br>
+                <input type="radio" name="przed_wiek" id=""> 16-20 <br>
+                <input type="radio" name="przed_wiek" id=""> więcej <br>
+            </fieldset>
+
+            <fieldset><legend>Opinia i załącznik</legend>
+                <textarea name="opinia" id="" cols="30" rows="10"
+                placeholder="wpisz opinię"></textarea>
+                <br>
+                <input type="file" name="plik" id="">
+            </fieldset>
+
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Kasuj formularz">
+        </form>
+    </article>
+    <aside>
+        <h2>Elementy dodatkowe - JavaScript</h2>
+        <iframe src="kontrolkiJS.html" frameborder="0"></iframe>
+    </aside>
+    <footer>
+        autor: Fabian Zalewski <hr>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br> 61-138 Poznań <br>
+        email: fbnzlwsk@gmail.com
+    </footer>
+  
+    
+</body>
+</html>
